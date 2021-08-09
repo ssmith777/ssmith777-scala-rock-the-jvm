@@ -39,4 +39,11 @@ object ValuesVariablesTypes extends App {
 
   aVarable = 5 // Note: This is known as a side effect
 
+  // Function Example
+  def aFunc(a: Int, b: Int): Int = {
+    return a * b
+  }
+
+  println(aFunc(1,3))
+
 }

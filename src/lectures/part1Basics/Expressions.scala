@@ -39,9 +39,34 @@ object Expressions extends App {
     val aConditionedVal = if(aCondition) 5 else 3 // IF EXPRESSION (Not a IF INSTRUCTION)
     println(aConditionedVal)
 
+    // Loops => DON'T EVER DO THIS AGAIN, loops are a no no in function programming
 
+    // This is imperative code - Functional Programming is Declarative by design
+    var i = 0
+    while (i < 10) {
+        println(i)
+        i += 1
+    }
+
+    // EVERYTHING in Scala is an Expression
+
+    val aWierdValue = (aVariable = 3) // Unit === void
+    println("Value of Unit : " + aWierdValue)
+
+    // Note: Side Effects in Scala are actually Expressions returning Unit
+    // Side Effects Examples:
+    // - println()
+    // - whiles
+    // - reassigning vars
+
+    // Code Block: The Value of a block is the value of its last expression (in this case a String"
+    val aCodeBlock = {
+        val y =2
+        val z = y + 1
+        if (z > y) "hello" else "goodbye"
+    }
+
+    println("aCodeBlock : " + aCodeBlock)
     // Functions
-
-
 
 }
