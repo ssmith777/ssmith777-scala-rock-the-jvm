@@ -55,11 +55,11 @@ object Expressions extends App {
 
     // Note: Side Effects in Scala are actually Expressions returning Unit
     // Side Effects Examples:
-    // - println()
+    // - println() - type Unit
     // - whiles
     // - reassigning vars
 
-    // Code Block: The Value of a block is the value of its last expression (in this case a String"
+    // Code Block: The Value of a block is the value of its last expression (in this case a String)
     val aCodeBlock = {
         val y =2
         val z = y + 1
@@ -67,6 +67,5 @@ object Expressions extends App {
     }
 
     println("aCodeBlock : " + aCodeBlock)
-    // Functions
 
 }
